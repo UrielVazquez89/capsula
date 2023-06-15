@@ -7,7 +7,7 @@
     <title>CAPSULA TRAMITES Y SERVICIOS</title>
     <link rel="shortcut icon" href="imag/logo2.jpeg">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -26,19 +26,21 @@
     </header>
     <div id="container">
         <form>
-            <!-- Username -->
-            <label for="name">Username:</label>
-            <input type="name">
-            <!-- Password -->
-            <label for="username">Password:</label>
-            <p><a href="#">Forgot your password?</a>
-            <input type="password">
-            <div id="lower">
-                <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
-                <!-- Submit Button -->
-                <input type="submit" value="Login">
-            </div>
-        </form>       
+            <div class="con">
+                    <h2>Inicio de sesión</h2>
+                <br>
+                <div class="field-set">
+                        <i class="fa fa-user-circle"></i>
+                    <input class="form-input" id="txt-input" type="text" placeholder="Nombre" required>
+                    <br>
+                        <i class="fa fa-key"></i>
+                    <input class="form-input" type="password"
+                    placeholder="Contraseña" id="pwd" name="password" required>
+                    <br>
+                    <button class="log-in">Iniciar</button>
+                </div>
+            
+        </form>     
     </div>
 
     <footer>

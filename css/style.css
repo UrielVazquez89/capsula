@@ -2,8 +2,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 header{
-    background: linear-gradient(#0094fd 60% , #ffffff);
+    background:#0094fd;
     padding: 20px 0;
+}
+.banner{
+    height: 150px;
 }
 .caja{
     width: 940px;
@@ -76,6 +79,25 @@ footer{
     text-align: center;
     background: linear-gradient(#ffffff, #0094fd 60%);
     padding: 20px;
+}
+.login{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.login li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.login a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.login a:hover{
+    color: #0d00ff;
+    text-decoration: underline;
 }
 .copyright{
     color: #000000;
@@ -292,3 +314,4 @@ margin: 0 auto;
         margin: 10px 10px;
     }
  }
+ 

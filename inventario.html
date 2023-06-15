@@ -7,7 +7,7 @@
     <title>CAPSULA TRAMITES Y SERVICIOS</title>
     <link rel="shortcut icon" href="imag/logo2.jpeg">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -29,15 +29,20 @@
     <main>
         <form>
             <label for="id">ID</label>
-            <input type="text" id="id" required placeholder="Escanee o digite el codigo de barras">
+            <input class="form-input" type="text" id="id" required placeholder="Escanee o digite el codigo de barras">
+            <br>
             <label for="producto">Nombre del producto</label>
-            <input type="text" id="producto" required>
+            <input class="form-input" type="text" id="producto" required>
+            <br>
             <label for="marca">Marca</label>
-            <input type="text" id="marca" required>
+            <input class="form-input" type="text" id="marca" required>
+            <br>
             <label for="caracteristicas">Caracteristicas</label>
-            <textarea cols="70" rows="10" id="caracteristicas" required placeholder="Ingrese tamaño, color, ml, grms, etc."></textarea>
+            <input class="form-input" type="text"  id="caracteristicas" required placeholder="Ingrese tamaño, color, ml, grms, etc.">
+            <br>
             <label for="precio">Precio</label>
-            <input type="text" id="precio" required>
+            <input class="form-input" type="text" id="precio" required>
+            <br>
             <label for="departamento">Departamento</label>
             <select id="departamento" required>
                 <option>Seleccione</option>
@@ -46,8 +51,11 @@
                 <option>Tramites</option>
                 <option>Otros</option>
             </select>
+            <br>
             <label for="stock">Piezas</label>
-            <input type="number" id="stock" required>
+            <input class="form-input" type="number" id="stock" required>
+            <br>
+                <button class="registrar">Registrar</button>
         </form>
     </main>
     <footer>
