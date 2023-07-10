@@ -3,15 +3,26 @@ body{
 }
 header{
     background:#0094fd;
-    padding: 20px 0;
+    padding: 100px;
 }
 .banner{
     height: 100%;
 }
-.caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+.logo{
+    margin: -55px 50px;
+    display: block;
+    float: left;
+    height: 100%;
+    
+    animation: girar infinite 30s linear;
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 nav{
     position: absolute;
