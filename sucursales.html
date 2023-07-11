@@ -13,41 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
 <body>
     <header>
         <div class="caja">
             <h1><img src="imag/logo.png" width="150"></h1>
             <nav>
                 <ul>
-                    <li><a href="ventas.html">Ventas</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="proveedores.html">Proveedor</a></li>
-                    <li><a href="compra.html">Compra</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div id="venta">
-        <form>
-            <h3>Venta</h3>
-        <label for="fecha">Fecha de venta y hora</label>
-        <input class="form-input" type="datetime-local">
-        <hr>
-            <h2>Ingresar producto</h2>
-            <label for="id">ID</label>
-            <input class="form-input" type="text" id="id" required placeholder="Escanee o digite el código de barras">
-            <button class="registrar">Insertar</button>
+        <form class="nuevo">
+            <h3>Nueva Sucursal</h3>
+            <label for="nom_sucu">Nombre de sucursal: </label>
+            <input class="form-input" type="text" id="nom_sucu" required  placeholder="Nombre de sucursal">
+            <br>
+            <label for="dir_sucu">Dirección: </label>
+            <input class="form-input" type="text" id="dir_sucu" required placeholder="calle, numero, colonia, municipio, cp">
+            <br>
+            <label for="tel_sucu">Telefono</label>
+            <input class="form-input" type="text" id="tel_sucu" required placeholder="XXX XXX XX XX">
+            <br>
+            <button class="registrar">Registrar</button>
         </form>
+        <hr>
+        <h3>SUCURSALES</h3>
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>PRODUCTO</th>
-                    <th>MARCA</th>
-                    <th>CARACTERISTICAS</th>
-                    <th>PRECIO VENTA</th>
+                    <th>ID SUCURSAL</th>
+                    <th>NOMBRE</th>
+                    <th>DIRECCION</th>
+                    <th>TELEFONO</th>
                     <th></th>
                 </tr>
             </thead>
@@ -57,27 +57,14 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td><a href="delete.php"> &#128465; </a>
+                    <td><a href="delete.php"> &#128465; </a><div><a href="update.php"> &#128393; </a></div></td>
                 </tr>
             </tbody>
         </table>
-        <form>
-            <label for="total">Total: </label> <input type="text">
-            <input type="submit" id="venta" value="Cobrar">
-        </form>
-        </div>
-        <hr>
-        <div>
-            <ul class="ticket">
-                <li><a href="ticket.html">Tickets</a></li>
-            </ul>
-        </div>
-    </main>
+    </main>      
     <footer>
         <img src="imag/logo.png" width="150">
         <p class="copyright">&#169; Copyright Tramites y Servicios Capsula - 2023</p>
     </footer>
 </body>
-
 </html>

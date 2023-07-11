@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 <body>
     <header>
         <div class="caja">
@@ -29,53 +30,36 @@
     </header>
     <main>
         <form>
-            <h3>Nuevo producto</h3>
-            <label for="codigo">Codigo</label>
-            <input class="form-input" type="text" id="codigo" required placeholder="Escanee o digite el codigo de barras">
+            <h3>Nuevo proveedor</h3>
+            <label for="empresa">Empresa: </label>
+            <input class="form-input" type="text" id="empresa" required  placeholder="Nombre de empresa">
             <br>
-            <label for="nom_prod">Nombre del producto</label>
-            <input class="form-input" type="text" id="nom_prod" required>
+            <label for="nom_prov">Nombre: </label>
+            <input class="form-input" type="text" id="nom_prov" required placeholder="Nombre de proveedor">
             <br>
-            <label for="marca">Marca</label>
-            <input class="form-input" type="text" id="marca" required>
+            <label for="tel_prov">Telefono: </label>
+            <input class="form-input" type="text" id="tel_prov" required placeholder="XXX XXX XX XX">
             <br>
-            <label for="descripcion">Descripción</label>
-            <input class="form-input" type="text"  id="descripcion" required placeholder="Ingrese tamaño, color, ml, grms, etc.">
+            <label for="email_prov">Email: </label>
+            <input class="form-input" type="email" id="email_prov" required placeholder="ejemplo@gmail.com">
             <br>
-            <label for="precio">Precio</label>
-            <input class="form-input" type="text" id="precio" required>
+            <label for="dir_prov">Dirección: </label>
+            <input class="form-input" type="text" id="dir_prov" required placeholder="calle, numero, colonia, municipio, cp">
             <br>
-            <label for="departamento">Departamento</label>
-            <select class="form-input" id="departamento" required>
-                <option>Seleccione</option>
-                <option>Papelería</option>
-                <option>Ciber</option>
-                <option>Tramites</option>
-                <option>Otros</option>
-            </select>
-            <br>
-            <label for="stock">Piezas</label>
-            <input class="form-input" type="number" id="stock" required>
-            <br>
-                <button class="registrar">Registrar</button>
+            <button class="registrar">Registrar</button>
         </form>
         <hr>
-        <form>
-            <h2>Buscar Producto</h2>
-            <label for="id">ID</label><input class="form-input" type="text" id="id" required>
-            <button class="registrar">Buscar</button>
-        </form>
-        <h2>PRODUCTOS</h2>
+        <div id="venta">
+        <h3>PROVEEDORES</h3>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>PRODUCTO</th>
-                    <th>MARCA</th>
-                    <th>DESCRIPCION</th>
-                    <th>PRECIO VENTA</th>
-                    <th>DEPARTAMENTO</th>
-                    <th>PIEZAS</th>
+                    <th>EMPRESA</th>
+                    <th>NOMBRE</th>
+                    <th>TELEFONO</th>
+                    <th>EMAIL</th>
+                    <th>DIRECCION</th>
                     <th></th>
                 </tr>
             </thead>
@@ -87,15 +71,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                     <td><a href="delete.php"> &#128465; </a><div><a href="update.php"> &#128393; </a></div></td>
                 </tr>
             </tbody>
         </table>
+        </div>
     </main>
     <footer>
         <img src="imag/logo.png" width="150">
         <p class="copyright">&#169; Copyright Tramites y Servicios Capsula - 2023</p>
     </footer>
 </body>
+
 </html>

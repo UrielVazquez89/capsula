@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 <body>
     <header>
         <div class="caja">
@@ -29,53 +30,37 @@
     </header>
     <main>
         <form>
-            <h3>Nuevo producto</h3>
-            <label for="codigo">Codigo</label>
-            <input class="form-input" type="text" id="codigo" required placeholder="Escanee o digite el codigo de barras">
+            <h3>Nueva compra</h3>
+            <label for="fecha_comp">Fecha: </label>
+            <input class="form-input" type="datetime-local" id="fecha_comp" required>
             <br>
-            <label for="nom_prod">Nombre del producto</label>
-            <input class="form-input" type="text" id="nom_prod" required>
+            <label for="piezas">Piezas: </label>
+            <input class="form-input" type="number" id="piezas" required>
             <br>
-            <label for="marca">Marca</label>
-            <input class="form-input" type="text" id="marca" required>
+            <label for="total_comp">Total: </label>
+            <input class="form-input" type="text" id="total_comp" required>
             <br>
-            <label for="descripcion">Descripción</label>
-            <input class="form-input" type="text"  id="descripcion" required placeholder="Ingrese tamaño, color, ml, grms, etc.">
-            <br>
-            <label for="precio">Precio</label>
-            <input class="form-input" type="text" id="precio" required>
-            <br>
-            <label for="departamento">Departamento</label>
-            <select class="form-input" id="departamento" required>
-                <option>Seleccione</option>
-                <option>Papelería</option>
-                <option>Ciber</option>
-                <option>Tramites</option>
-                <option>Otros</option>
-            </select>
-            <br>
-            <label for="stock">Piezas</label>
-            <input class="form-input" type="number" id="stock" required>
-            <br>
-                <button class="registrar">Registrar</button>
+            <button class="registrar">Registrar</button>
         </form>
-        <hr>
+        <div id="venta">
         <form>
-            <h2>Buscar Producto</h2>
-            <label for="id">ID</label><input class="form-input" type="text" id="id" required>
+            <h2>Buscar compra</h2>
+            <br/>
+            <label for="id">ID</label>
+            <input class="form-input" type="text" id="id" required placeholder="Escanee o digite el código de barras">
             <button class="registrar">Buscar</button>
         </form>
-        <h2>PRODUCTOS</h2>
+        <hr>
+        <h3>COMPRAS</h3>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>PRODUCTO</th>
-                    <th>MARCA</th>
-                    <th>DESCRIPCION</th>
-                    <th>PRECIO VENTA</th>
-                    <th>DEPARTAMENTO</th>
+                    <th>FECHA</th>
                     <th>PIEZAS</th>
+                    <th>TOTAL</th>
+                    <th>ID USUARIO</th>
+                    <th>ID PROVEEDOR</th>
                     <th></th>
                 </tr>
             </thead>
@@ -87,15 +72,17 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                     <td><a href="delete.php"> &#128465; </a><div><a href="update.php"> &#128393; </a></div></td>
                 </tr>
             </tbody>
         </table>
+        <hr>
+        </div>
     </main>
     <footer>
         <img src="imag/logo.png" width="150">
         <p class="copyright">&#169; Copyright Tramites y Servicios Capsula - 2023</p>
     </footer>
 </body>
+
 </html>

@@ -21,30 +21,32 @@
                 <ul>
                     <li><a href="ventas.html">Ventas</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="proveedores.html">Proveedor</a></li>
+                    <li><a href="compra.html">Compra</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <form>
-            <label for="id">ID</label>
-            <input class="form-input" type="text" id="id" required placeholder="Escanee o digite el codigo de barras">
+            <h3>Nuevo producto</h3>
+            <label for="codigo">Codigo</label>
+            <input class="form-input" type="text" id="codigo" required placeholder="Escanee o digite el codigo de barras">
             <br>
-            <label for="producto">Nombre del producto</label>
-            <input class="form-input" type="text" id="producto" required>
+            <label for="nom_prod">Nombre del producto</label>
+            <input class="form-input" type="text" id="nom_prod" required>
             <br>
             <label for="marca">Marca</label>
             <input class="form-input" type="text" id="marca" required>
             <br>
-            <label for="caracteristicas">Caracteristicas</label>
-            <input class="form-input" type="text"  id="caracteristicas" required placeholder="Ingrese tamaño, color, ml, grms, etc.">
+            <label for="descripcion">Descripción</label>
+            <input class="form-input" type="text"  id="descripcion" required placeholder="Ingrese tamaño, color, ml, grms, etc.">
             <br>
             <label for="precio">Precio</label>
             <input class="form-input" type="text" id="precio" required>
             <br>
             <label for="departamento">Departamento</label>
-            <select id="departamento" required>
+            <select class="form-input" id="departamento" required>
                 <option>Seleccione</option>
                 <option>Papelería</option>
                 <option>Ciber</option>

@@ -20,40 +20,51 @@
             <nav>
                 <ul>
                     <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <h3>Nuevo usuario</h3>
         <form class="nuevo">
+            <h3>Nuevo usuario</h3>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" required  placeholder="Nombre de usuario">
+            <input class="form-input" type="text" id="nombre" required  placeholder="Nombre de usuario">
+            <br>
             <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" required placeholder="Apellido">
+            <input class="form-input" type="text" id="apellido" placeholder="Apellido">
+            <br>
             <label for="password">Contraseña</label>
-            <input type="password" id="password" required placeholder="Numeros y letras (mayusculas y minusculas)">
+            <input class="form-input" type="password" id="password" required placeholder="Numeros y letras (mayusculas y minusculas)">
+            <br>
             <label for="tipo">Tipo de usuario</label>
-            <select id="tipo" required>
+            <select class="form-input" id="tipo" required>
                 <option>Seleccione</option>
                 <option value="admin">Administrador</option>
                 <option value="cajero">Cajero</option>
             </select>
+            <br>
             <label for="telefono"></label>
-            <input type="tel" id="telefono" required placeholder="XX XX XX XX XX">
+            <input class="form-input" type="tel" id="telefono" required placeholder="XX XX XX XX XX">
+            <br>
             <label for="email">E-Mail</label>
-            <input type="email" id="email" required placeholder="ejemplo@gmail.com">
+            <input class="form-input" type="email" id="email" placeholder="ejemplo@gmail.com">
+            <br>
             <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" required placeholder="calle, Numero Ext, CP, Localidad, Municipio">
-            <label for="turno"></label>
-            <select id="turno">
+            <input class="form-input" type="text" id="direccion" placeholder="calle, Numero Ext, CP, Localidad, Municipio">
+            <br>
+            <label for="turno">Turno</label>
+            <select class="form-input" id="turno">
                 <option>Selecciona</option>
                 <option value="matutino">Matutino</option>
                 <option value="vespertino">Vespertino</option>
                 <option value="Mixto">Mixto</option>
             </select>
+            <br>
+            <button class="registrar">Registrar</button>
         </form>
-        <h3>Usuarios existentes</h3>
+        <hr>
+        <h3>USUARIOS</h3>
         <table>
             <thead>
                 <tr>
